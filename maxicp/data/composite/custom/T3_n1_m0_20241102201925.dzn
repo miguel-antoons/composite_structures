@@ -1,0 +1,8 @@
+T = 6;
+n = 1;
+m = 0;
+R = 1;
+root = [1];
+thickness = [6];
+edges = [];
+counts = [|1, 4, 1, 0|];

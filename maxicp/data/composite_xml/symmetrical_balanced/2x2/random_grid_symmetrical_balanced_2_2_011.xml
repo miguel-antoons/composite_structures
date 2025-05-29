@@ -1,0 +1,45 @@
+<Model>
+	<Materials>
+		<material Id="TAPE_MEP15047"  orientations="0 45 90 135" thickness="0.184"/>
+	</Materials>
+	<Sequences>
+		<sequence Id="F1*" Length="26" Half="1"/>
+		<sequence Id="F2*" Length="27" Half="1"/>
+		<sequence Id="F3*" Length="29" Half="1"/>
+		<sequence Id="F4*" Length="26" Half="1"/>
+	</Sequences>
+	<Connections>
+		<connection SeqId="F1*" To="F2* F3*"/>
+		<connection SeqId="F2*" To="F1* F4*"/>
+		<connection SeqId="F3*" To="F4* F1*"/>
+		<connection SeqId="F4*" To="F3* F2*"/>
+	</Connections>
+	<Constraints>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F1*" nppo="9 6 5 6" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F2*" nppo="10 6 5 6" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F3*" nppo="9 6 8 6" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F4*" nppo="9 6 5 6" active="ON"/>
+
+		<constraint name="Constraint_FirstPly45" SequenceId="F1*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F2*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F3*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F4*"  active="ON"/>
+
+		<constraint name="Constraint_90Gap" SequenceId="F1*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F2*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F3*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F4*"  active="ON"/>
+
+		<constraint name="Constraint_PlyDropoff" SequenceId="F1*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F2*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F3*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F4*" nbdropoffs="3" active="ON"/>
+
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F1*" nbmax="4" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F2*" nbmax="4" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F3*" nbmax="4" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F4*" nbmax="4" active="ON"/>
+
+	</Constraints>
+	<Validate active="OFF"/>
+</Model>

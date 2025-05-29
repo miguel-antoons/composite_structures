@@ -1,0 +1,13 @@
+% File represents an instance of a Composite Structure problem to be solved by a CP framework
+% Created on 2025-03-25 14:05:13.597
+T = 60;
+n = 4;
+m = 4;
+edges = [(1, 2),
+(4, 3),
+(3, 1),
+(4, 2)];
+counts = [|26, 9, 11, 7,
+|24, 9, 11, 7,
+|27, 9, 11, 7,
+|29, 9, 11, 11|];

@@ -1,0 +1,129 @@
+<Model>
+	<Materials>
+		<material Id="TAPE_MEP15047"  orientations="0 45 90 135" thickness="0.184"/>
+	</Materials>
+	<Sequences>
+		<sequence Id="F1*" Length="25" Half="1"/>
+		<sequence Id="F2*" Length="22" Half="1"/>
+		<sequence Id="F3*" Length="19" Half="1"/>
+		<sequence Id="F4*" Length="16" Half="1"/>
+		<sequence Id="F5*" Length="22" Half="1"/>
+		<sequence Id="F6*" Length="19" Half="1"/>
+		<sequence Id="F7*" Length="16" Half="1"/>
+		<sequence Id="F8*" Length="13" Half="1"/>
+		<sequence Id="F9*" Length="19" Half="1"/>
+		<sequence Id="F10*" Length="16" Half="1"/>
+		<sequence Id="F11*" Length="13" Half="1"/>
+		<sequence Id="F12*" Length="10" Half="1"/>
+		<sequence Id="F13*" Length="16" Half="1"/>
+		<sequence Id="F14*" Length="13" Half="1"/>
+		<sequence Id="F15*" Length="10" Half="1"/>
+		<sequence Id="F16*" Length="7" Half="1"/>
+	</Sequences>
+	<Connections>
+		<connection SeqId="F1*" To="F2* F5*"/>
+		<connection SeqId="F2*" To="F1* F3* F6*"/>
+		<connection SeqId="F3*" To="F2* F4* F7*"/>
+		<connection SeqId="F4*" To="F3* F8*"/>
+		<connection SeqId="F5*" To="F6* F1* F9*"/>
+		<connection SeqId="F6*" To="F5* F7* F2* F10*"/>
+		<connection SeqId="F7*" To="F6* F8* F3* F11*"/>
+		<connection SeqId="F8*" To="F7* F4* F12*"/>
+		<connection SeqId="F9*" To="F10* F5* F13*"/>
+		<connection SeqId="F10*" To="F9* F11* F6* F14*"/>
+		<connection SeqId="F11*" To="F10* F12* F7* F15*"/>
+		<connection SeqId="F12*" To="F11* F8* F16*"/>
+		<connection SeqId="F13*" To="F14* F9*"/>
+		<connection SeqId="F14*" To="F13* F15* F10*"/>
+		<connection SeqId="F15*" To="F14* F16* F11*"/>
+		<connection SeqId="F16*" To="F15* F12*"/>
+	</Connections>
+	<Constraints>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F1*" nppo="7 4 10 4" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F2*" nppo="6 3 10 3" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F3*" nppo="6 2 9 2" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F4*" nppo="6 2 6 2" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F5*" nppo="6 3 10 3" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F6*" nppo="6 3 7 3" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F7*" nppo="6 2 6 2" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F8*" nppo="4 2 5 2" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F9*" nppo="5 3 8 3" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F10*" nppo="5 2 7 2" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F11*" nppo="5 1 6 1" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F12*" nppo="4 1 4 1" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F13*" nppo="5 3 5 3" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F14*" nppo="5 2 4 2" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F15*" nppo="4 1 4 1" active="ON"/>
+		<constraint name="Constraint_PliesPerOrientation" SequenceId="F16*" nppo="2 1 3 1" active="ON"/>
+
+		<constraint name="Constraint_FirstPly45" SequenceId="F1*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F2*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F3*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F4*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F5*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F6*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F7*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F8*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F9*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F10*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F11*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F12*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F13*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F14*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F15*"  active="ON"/>
+		<constraint name="Constraint_FirstPly45" SequenceId="F16*"  active="ON"/>
+
+		<constraint name="Constraint_90Gap" SequenceId="F1*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F2*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F3*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F4*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F5*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F6*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F7*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F8*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F9*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F10*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F11*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F12*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F13*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F14*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F15*"  active="ON"/>
+		<constraint name="Constraint_90Gap" SequenceId="F16*"  active="ON"/>
+
+		<constraint name="Constraint_PlyDropoff" SequenceId="F1*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F2*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F3*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F4*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F5*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F6*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F7*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F8*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F9*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F10*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F11*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F12*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F13*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F14*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F15*" nbdropoffs="3" active="ON"/>
+		<constraint name="Constraint_PlyDropoff" SequenceId="F16*" nbdropoffs="3" active="ON"/>
+
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F1*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F2*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F3*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F4*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F5*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F6*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F7*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F8*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F9*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F10*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F11*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F12*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F13*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F14*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F15*" nbmax="3" active="ON"/>
+		<constraint name="Constraint_ConsecutivePlies" SequenceId="F16*" nbmax="3" active="ON"/>
+
+	</Constraints>
+	<Validate active="OFF"/>
+</Model>
