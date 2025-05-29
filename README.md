@@ -40,7 +40,7 @@ In general, the models ending with `_chuffed` are the ones used for the Chuffed 
 
 ### feasibility
 
-In this directory, all the models that simply check feasibility are stored. These are also the models that were compared against the commercial solution of our industrial partner.
+In [this directory](minizinc/feasibility), all the models that simply check feasibility are stored. These are also the models that were compared against the commercial solution of our industrial partner.
 More specifically, the models stored implement the following rules, in addition to the mandatory rules:
 
 - [`model_template.mzn`](minizinc/feasibility/model_template.mzn) only implements the mandatory rules.
@@ -55,7 +55,7 @@ More specifically, the models stored implement the following rules, in addition 
 
 ### solve_unfeasible
 
-In this directory, all the models that relax or remove a constraint are stored. It also contains the models that translate said removed/relaxed constraint into an objective function.
+In [this directory](minizinc/solve_unfeasible), all the models that relax or remove a constraint are stored. It also contains the models that translate said removed/relaxed constraint into an objective function.
 More specifically, it contains the following models:
 
 - [`model_90gap_chuffed.mzn`](minizinc/solve_unfeasible/model_90gap_chuffed.mzn) removes the D2 constraint.
